@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+
 import pool from '../database'; // Asegúrate de que tu archivo de conexión a la base de datos esté correctamente configurado
 
 // Registrar una nueva dirección de pago

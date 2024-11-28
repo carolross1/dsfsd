@@ -80,7 +80,7 @@ router.get(
     const { token } = req.user as { token: string };
 
     // Redirigir al frontend con el token en la URL
-    res.redirect(`http://localhost:4200/menu?token=${token}`);
+    res.redirect(`https://pvabarrotes-2cc60.web.app/menu?token=${token}`);
   }
 );
 

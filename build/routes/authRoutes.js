@@ -77,6 +77,6 @@ router.get('/facebook/callback', passport_1.default.authenticate('facebook', { s
 (req, res) => {
     const { token } = req.user;
     // Redirigir al frontend con el token en la URL
-    res.redirect(`http://localhost:4200/menu?token=${token}`);
+    res.redirect(`https://pvabarrotes-2cc60.web.app/menu?token=${token}`);
 });
 exports.default = router;
