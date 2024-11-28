@@ -6,10 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
-// import passport from 'passport';
-// import dotenv from 'dotenv';
-// // Configurar dotenv para cargar variables de entorno
-// dotenv.config();
+const passport_1 = __importDefault(require("passport"));
+const dotenv_1 = __importDefault(require("dotenv"));
+// Configurar dotenv para cargar variables de entorno
+dotenv_1.default.config();
 // Importar las rutas
 const cortecajaRoutes_1 = __importDefault(require("./routes/cortecajaRoutes"));
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
@@ -37,7 +37,7 @@ class Server {
         this.app.use((0, cors_1.default)());
         this.app.use(express_1.default.json());
         this.app.use(express_1.default.urlencoded({ extended: false }));
-        // this.app.use(passport.initialize());
+        this.app.use(passport_1.default.initialize());
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);

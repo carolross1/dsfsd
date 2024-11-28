@@ -1,11 +1,11 @@
 import express, { Application } from 'express'; 
 import morgan from 'morgan';
 import cors from 'cors';
-// import passport from 'passport';
-// import dotenv from 'dotenv';
+import passport from 'passport';
+import dotenv from 'dotenv';
 
-// // Configurar dotenv para cargar variables de entorno
-// dotenv.config();
+// Configurar dotenv para cargar variables de entorno
+dotenv.config();
 
 // Importar las rutas
 import cortecajaRoutes from './routes/cortecajaRoutes';
@@ -38,7 +38,7 @@ class Server {
         this.app.use(cors());
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: false }));
-        // this.app.use(passport.initialize());
+        this.app.use(passport.initialize());
     }
 
     routes(): void {
