@@ -38,7 +38,8 @@ function generateUserId() {
 passport_1.default.use(new passport_facebook_1.Strategy({
     clientID: FACEBOOK_APP_ID,
     clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: 'http://localhost:8080/auth/facebook/callback',
+    // callbackURL: 'http://localhost:8080/auth/facebook/callback',
+    callbackURL: 'https://server-production-1601.up.railway.app/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'email'],
 }, (accessToken, refreshToken, profile, done) => __awaiter(void 0, void 0, void 0, function* () {
     var _a, _b;
