@@ -1,8 +1,9 @@
 export default{
     database:{
-        host:'localhost',
+        host:'autorack.proxy.rlwy.net',
         user:'root',
-        password:'',
-        database:'ng_punto_de_venta'
+        password:'mLbTDbAipoLVoyyWzIiduvwZeTuuuCHa',
+        database:'railway',
+        port: 31706, // Puerto del servidor
     }
 }

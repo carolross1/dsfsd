@@ -12,8 +12,8 @@
 // });
 // export default pool;
 
-import mysql from 'mysql2/promise'; // Usar mysql2 con soporte para promesas
-import keys from './keys'; // Importar configuración de la base de datos
+import mysql from 'mysql2/promise';
+import keys from './keys';
 
 // Crear un pool de conexiones a la base de datos
 const pool = mysql.createPool({
@@ -21,7 +21,9 @@ const pool = mysql.createPool({
     user: keys.database.user,
     password: keys.database.password,
     database: keys.database.database,
-  
+    port: keys.database.port, // Si es necesario, puedes incluir el puerto
 });
 
 export default pool; // Exportar el pool para su uso en otros archivos
+
+
