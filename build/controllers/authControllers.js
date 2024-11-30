@@ -21,7 +21,7 @@ const database_1 = __importDefault(require("../database"));
 passport_1.default.use(new passport_facebook_1.Strategy({
     clientID: '910935567565163',
     clientSecret: '99997de41e2c41f398dc91ec9db4d2a2',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'http://localhost:8080/auth/facebook/callback',
     profileFields: ['id', 'emails', 'name']
 }, (accessToken, refreshToken, profile, done) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
