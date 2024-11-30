@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //         port: 31706
 //     }
 // };
-export default {
+module.exports ={
     database: {
         host: 'autorack.proxy.rlwy.net', // Dirección del servidor de la base de datos
         user: 'root', // Usuario de la base de datos
