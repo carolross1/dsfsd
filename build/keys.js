@@ -11,6 +11,8 @@ exports.default = {
         host: 'autorack.proxy.rlwy.net',
         user: 'root',
         password: 'mLbTDbAipoLVoyyWzIiduvwZeTuuuCHa',
-        database: 'railway'
+        database: 'railway',
+        port: 31706,
+        conectionTimeout: 10000
     }
 };
